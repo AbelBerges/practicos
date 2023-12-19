@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            9.- Definir un estilo para aplicar a tablas. Se piden diferentes valores para el estilo del borde;
+            en concreto, se tiene doble trazo para el borde de la tabla, uno sólido para los encabezados
+            y otro de bajo relieve para las celdas normales. También se solicita un color de fondo
+            diferente para cada elemento: los encabezados con un azul verdoso, las celdas con naranja
+            y la tabla con gris.
+            Por otro lado se necesita un espacio entre el borde de la tabla y las celdas mediante la
+            declaración border-spacing:12px; ubicada en el selector table. Esta declaración la
+            heredarán las celdas también. Por último la declaración padding:4px; en el selector td para
+            dejar un margen entre el borde de las celdas y su contenido.
+        -->
+        <title>Ejercicio 9 - Aplicamos estilos a las tablas</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h3>Vamos a establecer estilos para las tablas</h3>
+     <div class="primero">
+        <div class="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Este es el encabezado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Datos 0 - 1</td>
+                        <td>Datos 0 - 2</td>
+                        <td>Datos 0 - 3</td>
+                        <td>Datos 0 - 4</td>
+                    </tr>
+                    <tr>
+                        <td>Datos 1 - 1</td>
+                        <td>Datos 1 - 2</td>
+                        <td>Datos 1 - 3</td>
+                        <td>Datos 1 - 4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+            </table>
+
+        </div>
+     </div>
+    </body>
+</html>

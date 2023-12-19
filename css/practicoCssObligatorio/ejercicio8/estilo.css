@@ -1,0 +1,8 @@
+/*
+8.- A través del atributo list-style-image, defina un regla de estilo para asociar un icono
+definido con un imagen a una lista sin orden (ul):
+*/
+
+li {
+    list-style-image: url("sqpurple.gif");
+}

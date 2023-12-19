@@ -1,0 +1,45 @@
+/*
+9.- Definir un estilo para aplicar a tablas. Se piden diferentes valores para el estilo del borde;
+    en concreto, se tiene doble trazo para el borde de la tabla, uno sólido para los encabezados
+    y otro de bajo relieve para las celdas normales. También se solicita un color de fondo
+    diferente para cada elemento: los encabezados con un azul verdoso, las celdas con naranja
+    y la tabla con gris.
+    Por otro lado se necesita un espacio entre el borde de la tabla y las celdas mediante la
+    declaración border-spacing:12px; ubicada en el selector table. Esta declaración la
+    heredarán las celdas también. Por último la declaración padding:4px; en el selector td para
+    dejar un margen entre el borde de las celdas y su contenido.
+*/
+
+table {
+    width: 100%;
+    border: double;
+    background-color: gray;
+    border-spacing: 12px;
+}
+
+th {
+    border: solid;
+    background-color: rgb(0, 185, 176);
+}
+
+td {
+    border: 1px solid rgb(190, 125, 3);
+    background: orange;
+    border-radius: 6px;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255,.7), inset -2px -2px 3px rgba(0, 0, 0,.1), 2px 2px 10px rgba(0, 0, 0, .1);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .9);
+    text-align: center;
+    border-spacing: inherit;
+    padding: 4px;
+}
+.contenedor {
+    width: 100%;
+}
+.primero {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    text-align: center;
+}

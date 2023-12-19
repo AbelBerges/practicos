@@ -1,0 +1,28 @@
+/*
+    10.- Realice un estilo que permita cambiar el aspecto de la primera letra de un párrafo.
+    Utilice clases para poder separar los párrafos a los que no queremos que se le aplique el
+    estilo.
+*/
+
+.modificar::first-letter {
+    background-color: bisque;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+/*
+p::first-letter {
+    background-color: bisque;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.otro {
+    background-color: #fff;
+    color: black;
+    font-style: normal;
+ }
+ */
