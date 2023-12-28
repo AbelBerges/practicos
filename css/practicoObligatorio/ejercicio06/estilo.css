@@ -1,0 +1,55 @@
+.contenedor {
+    position: relative;
+    color: #08aadf;
+    display: flex;
+       
+ 
+}
+.tieneTabla {
+    margin: 0 auto;
+    background-color: #d3d4d3;
+}
+td {
+    border-bottom: #08aadf;
+    border-width: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom-style: solid;
+    width: 180px;
+    padding: 5px;
+}
+
+.lista {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 180px;
+    padding: 10px;
+    border: 0px;
+    border-style: solid;
+    display: flex;
+    margin-top: 5px;
+}
+
+td.separador {
+    width: 20px;
+    border: 0px;
+    border-style: solid;
+}
+
+img {
+    float: left;
+    padding-right: 10px;
+}
+ol {
+    color: black;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+li {
+    padding-bottom: 15px;
+}

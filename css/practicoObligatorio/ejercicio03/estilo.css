@@ -1,0 +1,11 @@
+body {
+    background: url("img/chicos.png") no-repeat top right;
+    background-attachment: fixed;
+    background-color: antiquewhite;
+    margin-right: 300px;
+}
+
+.imgRigth {
+    float: left;
+    padding-right: 5px;
+}

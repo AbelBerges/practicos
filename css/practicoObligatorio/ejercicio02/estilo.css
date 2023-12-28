@@ -1,0 +1,14 @@
+.contenedor {
+    display: flex;
+}
+
+.img3H {
+    display: flex;
+    justify-content: center;
+}
+
+.img3V {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}

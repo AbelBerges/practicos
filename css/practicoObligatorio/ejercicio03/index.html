@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ejercicio 3 - Colocar una imagen de fondo de modo que quede fija
+    </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    
+        <div>
+            <img class="imgRigth" src="img/img01.png" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas esse asperiores odit assumenda
+            accusantium expedita vel! Illum consequuntur, nisi pariatur nihil vel id! Voluptas, dicta voluptatum maxime
+            accusamus reiciendis autem.
+            <br><br>
+            Una de las cosas más difíciles de aprender en programación no es la sintaxis que necesita aprender, sino
+            cómo aplicarla para resolver problemas del mundo real. Debes comenzar a pensar como un programador — esto
+            generalmente implica mirar descripciones de lo que necesita hacer tu programa, determinar qué
+            características de código necesitas para alcanzar esas cosas y cómo hacer que funcionen juntas.
+
+            Esto implica una combinación de trabajo duro, experiencia con la sintaxis de programación y práctica — más
+            un poquito de creatividad. Mientras más programes, más habilidoso serás haciéndolo. No te podemos prometer
+            que vas a desarrollar un "cerebro de programador" en cinco minutos, pero, a lo largo de este curso, te vamos
+            a dar muchas oportunidades de practicar el pensar como un programador.
+
+            Teniendo esto en mente, veamos el ejemplo que vamos a construir en este artículo, y revisemos el proceso
+            general de seccionarlo y dividirlo en tareas tangibles.
+            </p>
+        </div>
+        <br>
+        <div>
+            Al observar este resumen, lo primero que podemos hacer es comenzar a desglosar el proyecto en tareas simples y realizables, con la mayor mentalidad de programador posible: <br>
+<br><br>
+    Generar un número aleatorio entre 1 y 100.
+    Registrar el número del intento en el que el jugador se encuentre. Empezando en 1.
+    Darle al jugador una forma de adivinar cuál es el número.
+    Una vez que se ha introducido el número, registrarlo en alguna parte para que el jugador pueda ver sus intentos previos.
+    A continuación, comprobar si el número es correcto. <br>
+    Si es correcto: <br>
+        Mostrar un mensaje de felicitaciones. <br>
+        Hacer que el jugador no pueda introducir más intentos (esto arruinaría el juego). <br>
+        Mostrar un control que permita al jugador volver a empezar el juego. <br>
+    Si es incorrecto y al jugador todavía le quedan intentos: <br>
+        Decirle al jugador que ha fallado. <br>
+        Dejar que el jugador lo intente de nuevo. <br>
+        Incrementa el número de intentos en 1. <br>
+    Si el jugador falla y no le quedan turnos: <br>
+        Decirle al jugador que el juego se ha terminado. <br>
+        Hacer que el jugador no pueda introducir más intentos (esto arruinaría el juego). <br>
+        Mostrar un control que permita al jugador volver a empezar el juego. <br>
+    Una vez que el juego se reinicia, asegúrate de que la lógica del juego y la IU (interfaz de usuario) se restablezcan por completo, luego vuelve al paso 1. <br>
+<br>
+Veamos cómo podemos trasformar estos pasos en código, construyendo el ejemplo y explorando las características de JavaScript a medida que avanzamos. <br>
+        </div>
+        <br>
+        <div>
+    Esta sección del código establece las variables y constantes que necesitamos para almacenar los datos que nuestro programa utilizará. Las variables básicamente son contenedores de valores (como números o cadenas de texto). Creas una variable con la palabra clave let (o var) seguida de un nombre para tu variable (leerás más sobre la diferencia entre las palabras clave en el siguiente artículo). Las constantes se utilizan para almacenar valores que no deseas modificar y se crean con la palabra clave const. En este caso, estamos usando constantes para almacenar referencias a partes de nuestra interfaz de usuario; el texto dentro de algunas de ellas puede cambiar, pero los elementos HTML a los que se hace referencia permanecen iguales. <br>
+<br><br>
+Puedes asignar un valor a tu variable o constante con un signo igual (=) seguido del valor que deseas darle. <br>
+<br>
+En nuestro ejemplo: <br>
+<br>
+    A la primera variable — randomNumber — se le asigna un número al azar entre 1 y 100, calculado usando un algoritmo matemático. <br>
+    Las primeras tres constantes sirven cada una para almacenar una referencia a los párrafos de resultados en nuestro HTML, y se usarán para insertar valores en los párrafos más adelante en el código (observa cómo están dentro de un elemento <div>, el cual se utiliza para seleccionar los tres más adelante para restablecerlos a sus valores originales, cuando reiniciamos el juego): <br>
+<br>
+        </div>
+        <div>
+            Al observar este resumen, lo primero que podemos hacer es comenzar a desglosar el proyecto en tareas simples y realizables, con la mayor mentalidad de programador posible: <br>
+<br><br>
+    Generar un número aleatorio entre 1 y 100.
+    Registrar el número del intento en el que el jugador se encuentre. Empezando en 1.
+    Darle al jugador una forma de adivinar cuál es el número.
+    Una vez que se ha introducido el número, registrarlo en alguna parte para que el jugador pueda ver sus intentos previos.
+    A continuación, comprobar si el número es correcto. <br>
+    Si es correcto: <br>
+        Mostrar un mensaje de felicitaciones. <br>
+        Hacer que el jugador no pueda introducir más intentos (esto arruinaría el juego). <br>
+        Mostrar un control que permita al jugador volver a empezar el juego. <br>
+    Si es incorrecto y al jugador todavía le quedan intentos: <br>
+        Decirle al jugador que ha fallado. <br>
+        Dejar que el jugador lo intente de nuevo. <br>
+        Incrementa el número de intentos en 1. <br>
+    Si el jugador falla y no le quedan turnos: <br>
+        Decirle al jugador que el juego se ha terminado. <br>
+        Hacer que el jugador no pueda introducir más intentos (esto arruinaría el juego). <br>
+        Mostrar un control que permita al jugador volver a empezar el juego. <br>
+    Una vez que el juego se reinicia, asegúrate de que la lógica del juego y la IU (interfaz de usuario) se restablezcan por completo, luego vuelve al paso 1. <br>
+<br>
+Veamos cómo podemos trasformar estos pasos en código, construyendo el ejemplo y explorando las características de JavaScript a medida que avanzamos. <br>
+        </div>
+        <br>
+        <div>
+    Esta sección del código establece las variables y constantes que necesitamos para almacenar los datos que nuestro programa utilizará. Las variables básicamente son contenedores de valores (como números o cadenas de texto). Creas una variable con la palabra clave let (o var) seguida de un nombre para tu variable (leerás más sobre la diferencia entre las palabras clave en el siguiente artículo). Las constantes se utilizan para almacenar valores que no deseas modificar y se crean con la palabra clave const. En este caso, estamos usando constantes para almacenar referencias a partes de nuestra interfaz de usuario; el texto dentro de algunas de ellas puede cambiar, pero los elementos HTML a los que se hace referencia permanecen iguales. <br>
+<br><br>
+Puedes asignar un valor a tu variable o constante con un signo igual (=) seguido del valor que deseas darle. <br>
+<br>
+En nuestro ejemplo: <br>
+<br>
+    A la primera variable — randomNumber — se le asigna un número al azar entre 1 y 100, calculado usando un algoritmo matemático. <br>
+    Las primeras tres constantes sirven cada una para almacenar una referencia a los párrafos de resultados en nuestro HTML, y se usarán para insertar valores en los párrafos más adelante en el código (observa cómo están dentro de un elemento <div>, el cual se utiliza para seleccionar los tres más adelante para restablecerlos a sus valores originales, cuando reiniciamos el juego): <br>
+<br>
+        </div>
+</body>
+
+</html>
