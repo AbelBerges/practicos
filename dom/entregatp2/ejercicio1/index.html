@@ -11,12 +11,12 @@
         <div class="contenedor">
             <div class="elForm">
                 <h3>Verificar que el número ingresado esté entre 1 y 100</h3>
-                <form name="primero" id="lpm" action="#">
+                <form name="primero" id="primero" action="#" onsubmit="return valido()">
                     <label for="">Ingrese el número</label>
                     <input type="text" name="elNum" id="otro">
                     <br><br>
                    <!-- <input class="boton" type="submit" name="elNum"> -->
-                   <input type="button" onclick="valido()" value="Enviar">
+                   <input type="submit" value="Enviar">
                 </form>
                 <br>
                 <span id="salida"></span>
