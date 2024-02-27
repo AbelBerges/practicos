@@ -7,7 +7,7 @@ function valido(){
     let num = document.forms["primero"]["otro"].value;
     //let num = document.getElementById("otro").value;
     //console.log("Muestro el num "+num);
-    patron = /^(\d){3$/;
+    patron = /^(\d){1,3$/;
     let mensaje = '';
     if(num >= 1 && num <= 100){
         mensaje = "<span class='correcto'>El número ingresado está dentro de el conjunto requerido</span>";
