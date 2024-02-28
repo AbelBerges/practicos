@@ -1,0 +1,48 @@
+.contenedor {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intermedio {
+    position: relative;
+    margin: 0 auto;
+    width: 540px;
+    height: 225px;
+}
+span{
+    text-align: center;
+}
+
+.botones {
+    height: 100%;
+    width: 70px;
+    position: relative;
+    left: 476px;
+    bottom: 225px;
+    /*float: left;
+    display: flex; 
+    align-items: center;
+    justify-content: center;*/
+}
+
+.botonesAtras {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    float: left;
+}
+
+.carrusel {
+    width: 450px;
+    max-height: 225px;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    margin-bottom: 15px;
+    padding-left: 72px;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+}

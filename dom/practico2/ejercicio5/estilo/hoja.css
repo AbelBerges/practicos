@@ -1,0 +1,23 @@
+.contenedor {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.elForm {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    font-size: 14px;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+span {
+    text-align: center;
+}
+
+input.boton {
+    border-radius: 40%;
+}

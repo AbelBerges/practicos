@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 de el Trabajo Práctico Obligatorio 2</title>
+    <link rel="stylesheet" href="estilo/hoja.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="elForm">
+            <!--
+                3) Realizar un formulario donde: la longitud del nombre sea mayor de cuatro caracteres. El
+                    nombre sólo debe contener caracteres del alfabeto español (no contiene números ni
+                    caracteres no alfanuméricos). La edad sólo debe contener números y estar comprendido
+                    entre 18 y 30. La dirección de correo debe incluir una arroba y su longitud sea superior a
+                    cinco caracteres.
+            -->
+            <span><h3>Validar la longitud de el nombre ingresado</h3></span>
+            <span>El Nombre debe ser mayor a 4 carácteres, no debe tener números ni símbolos</span>
+            <form action="paginas/index.html" name="elNombre" onsubmit="return chequeo()">
+            <label for="">Nombre</label>
+            <input type="text" name="vaNom"><br>
+            <label for="">Edad</label>
+            <input type="text" name="vaEdad"><br>
+            <label for="">Correo</label>
+            <input type="text" name="vaCorreo"><br><br>
+            <input type="submit" value="Validar">
+            </form>
+        </div>
+    </div>
+    <script src="codigo/script.js"></script>
+</body>
+</html>

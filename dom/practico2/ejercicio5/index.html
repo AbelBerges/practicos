@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 del Trabajo Práctico Obligatorio 2</title>
+    <link rel="stylesheet" href="estilo/hoja.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="elForm">
+            <!--
+                5) Realice una página donde el usuario pueda cargar un contacto. El contacto de esa
+                   persona debe tener al menos un teléfono y como máximo 3. Además debe ser obligatoria la
+                   carga del mail. Realice las validaciones necesarias.
+            -->
+            <span><h3>Sistema de carga de contactos</h3></span>
+            <form action="#" name="contacto" onsubmit="return validar()">
+                <label for="">Nombre</label>
+                <input type="text" name="vaNombre"><br>
+                <label for="">Apellido</label>
+                <input type="text" name="vaApellido"><br>
+                <div id="masTel">
+                <label for="">Teléfono</label>
+                <input type="text" name="elTel0">
+                <input class="boton" type="button" onclick="otroTel()" value="+"><br>
+                </div>
+                <label for="">Correo</label>
+                <input type="text" name="vaCorreo">
+                <br><br>
+                <input type="submit" value="Validar">
+            </form>
+        </div>
+    </div>
+    <script src="codigo/script.js"></script>
+</body>
+</html>
